@@ -21,21 +21,19 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '24.x'
 
-      - name: npm ci and build
-        env:
-          CI: true
+      - name: npm install, build, and test
         run: |
           npm install
-          npm ci
-          npm run build
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: build
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -49,7 +47,18 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-          path: build
+          path: site
+
+      - name: Normalize deployment package
+        run: |
+          rm -rf deploy
+          mkdir -p deploy
+          if [ -d site/dist ]; then
+            cp -R site/dist/. deploy/
+          else
+            cp -R site/. deploy/
+          fi
+          ls -la deploy
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -58,11 +67,23 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3AEF9BAF66D144239C5A888C2FA87C98 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C63C729001EB4A19A5C877DF9386FAF9 }}
 
+      - name: Configure startup command in App Service
+        run: |
+          RESOURCE_GROUP=$(az webapp list --query "[?name=='fab4kids-tr'].resourceGroup | [0]" -o tsv)
+          if [ -z "$RESOURCE_GROUP" ]; then
+            echo "Could not determine resource group for app 'fab4kids-tr'"
+            exit 1
+          fi
+          az webapp config set \
+            --name fab4kids-tr \
+            --resource-group "$RESOURCE_GROUP" \
+            --startup-file "pm2 serve /home/site/wwwroot --no-daemon --spa"
+
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'fab4kids-tr'
           slot-name: 'Production'
-          package: ./build
-          startup-command: 'pm2 serve /home/site/wwwroot --no-daemon --spa'
+          package: deploy
+          

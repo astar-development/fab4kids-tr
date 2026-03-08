@@ -326,26 +326,3 @@
     text-align: center;
   }
 }
-
-/* Crazy version overrides */
-.cart-page h1 {
-  font-family: 'Rubik Spray Paint', 'Impact', sans-serif;
-  color: var(--ink);
-  background: none;
-  -webkit-text-fill-color: var(--ink);
-}
-
-.cart-item {
-  border-bottom: 2px dashed color-mix(in srgb, var(--line-color), transparent 30%);
-}
-
-.cart-item-quantity button:hover {
-  background-color: var(--accent);
-  color: #160d2b;
-}
-
-.clear-cart-btn:hover,
-.checkout-btn:hover,
-.shop-btn:hover {
-  transform: translateY(-2px) rotate(-1deg);
-}

@@ -19,7 +19,7 @@ const Header = () => {
         <Link to="/" className="brand-link">
           <img src="/logo.png" alt="Fab4Kids Logo" className="logo" />
           <div className="brand-block">
-            <h1 className="site-title">Fab4Kids Chaos Lab</h1>
+            <h1 className="site-title">Fab4Kids Studio</h1>
             <p className="site-subtitle">Montessori Worksheets + Materials</p>
           </div>
         </Link>
@@ -39,7 +39,7 @@ const Header = () => {
             aria-label="Toggle colour theme"
             title={theme === 'italian-flag' ? 'Switch to Maria Montessori Theme' : 'Switch to Italian Flag Theme'}
           >
-            {theme === 'italian-flag' ? 'Flip to Maria Mode' : 'Flip to Tricolore Mode'}
+            {theme === 'italian-flag' ? 'Maria Montessori Theme' : 'Italian Flag Theme'}
           </button>
 
           <div className="theme-dots" aria-label="Theme selection">

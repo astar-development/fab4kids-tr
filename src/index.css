@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik+Spray+Paint&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 :root {
-  font-family: 'Space Grotesk', 'Verdana', sans-serif;
+  font-family: 'Manrope', 'Trebuchet MS', sans-serif;
   line-height: 1.6;
   font-weight: 400;
 
@@ -23,13 +23,10 @@ body {
   min-height: 100vh;
   color: var(--ink, #1f2321);
   transition: background 0.5s ease;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-family: 'Archivo Black', 'Impact', sans-serif;
-  letter-spacing: 0.01em;
 }
 
 a {
@@ -49,18 +46,18 @@ img {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 11px;
 }
 
 ::-webkit-scrollbar-track {
-  background: color-mix(in srgb, var(--paper, #f5f1e8), black 12%);
+  background: color-mix(in srgb, var(--paper, #f5f1e8), black 6%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(170deg, var(--accent, #c0392b), var(--accent-alt, #7afff2));
+  background: linear-gradient(140deg, var(--accent, #c0392b), var(--accent-soft, #e9dbc4));
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(170deg, var(--accent-alt, #7afff2), var(--accent, #c0392b));
+  background: linear-gradient(140deg, var(--accent-soft, #e9dbc4), var(--accent, #c0392b));
 }
