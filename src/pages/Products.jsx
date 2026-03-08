@@ -48,8 +48,8 @@ const Products = () => {
   return (
     <div className="products-page">
       <div className="products-header">
-        <h1>Montessori Catalogue</h1>
-        <p>Downloadable worksheet collections and physical classroom materials in one curated shop.</p>
+        <h1>Our Products</h1>
+        <p>Discover our extensive range of educational equipment and materials for children under 10</p>
       </div>
 
       <div className="products-container">
@@ -102,7 +102,7 @@ const Products = () => {
 
         <div className="products-grid">
           <div className="products-info">
-            <p>Showing {sortedProducts.length} item{sortedProducts.length !== 1 ? 's' : ''}</p>
+            <p>Showing {sortedProducts.length} product{sortedProducts.length !== 1 ? 's' : ''}</p>
           </div>
           
           {sortedProducts.length > 0 ? (

@@ -4,29 +4,31 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="about-header">
-        <h1>About Fab4Kids Studio</h1>
-        <p className="tagline">A Montessori-first platform for downloadable lessons and physical materials</p>
+        <h1>About Fab4Kids</h1>
+        <p className="tagline">Inspiring Young Minds Through Play Since 2010</p>
       </div>
 
       <section className="about-section">
-        <h2>Version 2 Story</h2>
+        <h2>Our Story</h2>
         <p>
-          Fab4Kids Studio started as a toy and activity shop, but this second version of our
-          site is built for families and educators specifically looking for Montessori learning
-          structure. We now pair printable worksheet systems with authentic physical apparatus,
-          so children can move between hand work and paper work naturally.
+          Fab4Kids was founded by a group of parents and educators who believed that learning
+          should be fun, engaging, and accessible to every child. What started as a small
+          online shop has grown into the UK's favourite destination for quality educational
+          equipment and materials.
         </p>
         <p>
-          Every collection is arranged to support independent work cycles, calm concentration,
-          and real-world practical life routines in both home and classroom environments.
+          We understand that the early years are crucial for development, and we're passionate
+          about providing products that spark curiosity, encourage creativity, and build
+          essential skills – all whilst keeping children entertained and engaged.
         </p>
       </section>
 
       <section className="about-section">
         <h2>Our Mission</h2>
         <p>
-          To make high-quality Montessori resources accessible across the UK by combining digital
-          convenience with durable physical equipment that can be used for years.
+          To make high-quality educational resources accessible to families across the UK,
+          supporting children's development through carefully curated products that combine
+          learning with fun.
         </p>
       </section>
 
@@ -34,83 +36,94 @@ const About = () => {
         <h2>Our Values</h2>
         <div className="values-grid">
           <div className="value-card">
-            <span className="value-icon">🧭</span>
-            <h3>Prepared Environment</h3>
+            <span className="value-icon">🎯</span>
+            <h3>Quality First</h3>
             <p>
-              We design shelves and bundles as complete learning environments, not isolated products.
+              Every product is carefully selected and tested to ensure it meets our high
+              standards for safety, durability, and educational value.
             </p>
           </div>
 
           <div className="value-card">
-            <span className="value-icon">🪵</span>
-            <h3>Material Integrity</h3>
+            <span className="value-icon">🌱</span>
+            <h3>Sustainability</h3>
             <p>
-              We prioritise tactile, proportion-accurate materials and practical worksheet formats
-              that support repetition without visual overload.
+              We prioritise eco-friendly products and sustainable practices, working with
+              suppliers who share our commitment to the environment.
             </p>
           </div>
 
           <div className="value-card">
-            <span className="value-icon">👁️</span>
-            <h3>Observation-Led</h3>
+            <span className="value-icon">👶</span>
+            <h3>Child-Centred</h3>
             <p>
-              We build resources around what children actually do independently, not around trends.
+              Everything we do is guided by what's best for children's development, safety,
+              and happiness.
             </p>
           </div>
 
           <div className="value-card">
-            <span className="value-icon">🏫</span>
-            <h3>School + Home Ready</h3>
+            <span className="value-icon">🤝</span>
+            <h3>Support & Service</h3>
             <p>
-              Our resources are written so parents, guides, and assistants can all present the same lesson clearly.
+              We're here to help! Our friendly team is always ready to assist with product
+              recommendations and any questions you may have.
             </p>
           </div>
         </div>
       </section>
 
       <section className="about-section">
-        <h2>Why Choose This Version?</h2>
+        <h2>Why Choose Us?</h2>
         <ul className="benefits-list">
           <li>
-            <strong>Worksheet + Apparatus Matching:</strong> Digital packs connect directly to physical material lessons.
+            <strong>Expert Curation:</strong> Our team of educators and parents carefully
+            selects each product based on educational value and child appeal.
           </li>
           <li>
-            <strong>Classroom Terminology:</strong> Naming and sequence align with Montessori practice.
+            <strong>Safety Assured:</strong> All products meet or exceed UK safety standards
+            and are age-appropriate.
           </li>
           <li>
-            <strong>Flexible Delivery:</strong> Download in minutes or receive physical sets with tracked delivery.
+            <strong>Quality Guarantee:</strong> We stand behind every product with our
+            30-day satisfaction guarantee.
           </li>
           <li>
-            <strong>Quality Guarantee:</strong> 30-day confidence period on all eligible physical materials.
+            <strong>Fast, Free Delivery:</strong> Free UK delivery on orders over £25, with
+            quick dispatch times.
           </li>
           <li>
-            <strong>Supportive Team:</strong> UK-based help desk for setup and implementation questions.
+            <strong>Excellent Customer Service:</strong> Our UK-based team is here to help
+            with any questions or concerns.
           </li>
           <li>
-            <strong>Educator Friendly:</strong> Bulk and institutional support for schools and nurseries.
+            <strong>Educational Resources:</strong> Free activity guides and educational tips
+            with many of our products.
           </li>
         </ul>
       </section>
 
       <section className="about-section">
-        <h2>If Maria Montessori Were Here Today</h2>
+        <h2>Supporting Schools & Nurseries</h2>
         <p>
-          The Maria Montessori theme imagines this platform as her modern digital schoolhouse:
-          precise materials, elegant simplicity, and practical tools that respect the child.
-          It is not historical reenactment; it is a present-day interpretation of her core principles
-          adapted for current families and classrooms.
+          We work with schools, nurseries, and childcare providers across the UK, offering
+          special bulk pricing and dedicated account management. If you're an educator or
+          run an educational institution, please get in touch to learn more about our
+          educational services programme.
         </p>
       </section>
 
       <section className="team-section">
         <h2>Our Commitment to You</h2>
         <p>
-          We are committed to helping adults set up calm, clear learning environments where children
-          can work independently with purpose.
+          At Fab4Kids, we believe that every child deserves the opportunity to learn, grow,
+          and thrive. We're committed to providing the tools and resources that make this
+          possible, backed by exceptional customer service and a genuine passion for
+          children's education.
         </p>
         <p>
-          Thank you for building with us. This version of Fab4Kids is designed to feel more like a
-          studio for serious early learning than a generic toy catalogue.
+          Thank you for choosing Fab4Kids. Together, we're building brighter futures, one
+          toy at a time!
         </p>
       </section>
     </div>

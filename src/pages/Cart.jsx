@@ -10,7 +10,7 @@ const Cart = () => {
       <div className="cart-page">
         <div className="empty-cart">
           <h2>Your Basket is Empty</h2>
-          <p>Add worksheet downloads or Montessori materials to begin your prepared environment.</p>
+          <p>Add some fantastic educational products for your little ones!</p>
           <Link to="/products" className="shop-btn">Browse Products</Link>
         </div>
       </div>
@@ -18,12 +18,12 @@ const Cart = () => {
   }
 
   const subtotal = getCartTotal();
-  const deliveryFee = subtotal >= 45 ? 0 : 5.99;
+  const deliveryFee = subtotal >= 25 ? 0 : 4.99;
   const total = subtotal + deliveryFee;
 
   return (
     <div className="cart-page">
-      <h1>Studio Basket</h1>
+      <h1>Shopping Basket</h1>
 
       <div className="cart-container">
         <div className="cart-items">
@@ -88,9 +88,9 @@ const Cart = () => {
             </span>
           </div>
 
-          {subtotal < 45 && (
+          {subtotal < 25 && (
             <div className="delivery-note">
-              Add £{(45 - subtotal).toFixed(2)} more for free physical delivery.
+              Add £{(25 - subtotal).toFixed(2)} more for free delivery!
             </div>
           )}
 
@@ -110,9 +110,9 @@ const Cart = () => {
           </Link>
 
           <div className="cart-info">
-            <p>Secure checkout</p>
-            <p>Digital delivery for worksheet packs</p>
-            <p>30-day returns on physical materials</p>
+            <p>✓ Secure checkout</p>
+            <p>✓ 30-day returns</p>
+            <p>✓ UK safety standards</p>
           </div>
         </div>
       </div>

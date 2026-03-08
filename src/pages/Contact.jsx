@@ -29,20 +29,20 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-header">
-        <h1>Contact the Studio</h1>
-        <p>Need help choosing worksheet packs or setting up physical Montessori shelves? We can help.</p>
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you! Whether you have a question about our products, need help with an order, or just want to say hello.</p>
       </div>
 
       <div className="contact-container">
         <div className="contact-info">
           <div className="info-card">
-            <h3>Email Support</h3>
-            <p>support@fab4kids.co.uk</p>
+            <h3>📧 Email Us</h3>
+            <p>hello@fab4kids.co.uk</p>
             <p>We typically respond within 24 hours</p>
           </div>
 
           <div className="info-card">
-            <h3>Phone Support</h3>
+            <h3>📞 Call Us</h3>
             <p>0800 123 4567</p>
             <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
             <p>Saturday: 10:00 AM - 4:00 PM</p>
@@ -50,15 +50,15 @@ const Contact = () => {
           </div>
 
           <div className="info-card">
-            <h3>Visit the Studio</h3>
-            <p>Fab4Kids Studio</p>
-            <p>24 Via dei Bambini</p>
+            <h3>🏢 Visit Us</h3>
+            <p>Fab4Kids Headquarters</p>
+            <p>123 Learning Lane</p>
             <p>London, EC1A 1BB</p>
             <p>United Kingdom</p>
           </div>
 
           <div className="info-card">
-            <h3>Appointments</h3>
+            <h3>⏰ Opening Hours</h3>
             <p>Showroom visits by appointment only</p>
             <p>Monday - Friday: 10:00 AM - 4:00 PM</p>
             <p>Please call ahead to arrange a visit</p>
@@ -66,7 +66,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-container">
-          <h2>Send a Message</h2>
+          <h2>Send Us a Message</h2>
           {submitted ? (
             <div className="success-message">
               <h3>✓ Message Sent!</h3>
@@ -110,11 +110,10 @@ const Contact = () => {
                   required
                 >
                   <option value="">Select a subject</option>
-                  <option value="worksheet-enquiry">Worksheet Enquiry</option>
-                  <option value="material-enquiry">Material Enquiry</option>
+                  <option value="product-enquiry">Product Enquiry</option>
                   <option value="order-status">Order Status</option>
                   <option value="returns">Returns & Refunds</option>
-                  <option value="bulk-order">School / Nursery Orders</option>
+                  <option value="bulk-order">Bulk Order / Schools</option>
                   <option value="feedback">Feedback</option>
                   <option value="other">Other</option>
                 </select>

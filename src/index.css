@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +5,7 @@
 }
 
 :root {
-  font-family: 'Manrope', 'Trebuchet MS', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   font-weight: 400;
 
@@ -21,7 +19,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  color: var(--ink, #1f2321);
+  color: #333;
   transition: background 0.5s ease;
 }
 
@@ -46,18 +44,18 @@ img {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 11px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: color-mix(in srgb, var(--paper, #f5f1e8), black 6%);
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(140deg, var(--accent, #c0392b), var(--accent-soft, #e9dbc4));
+  background: linear-gradient(135deg, #FF6B9D, #C96DD8);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(140deg, var(--accent-soft, #e9dbc4), var(--accent, #c0392b));
+  background: linear-gradient(135deg, #C96DD8, #6B8EFF);
 }

@@ -6,15 +6,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Fab4Kids Studio</h3>
-          <p>Montessori-first learning resources for homes, classrooms, and micro-schools.</p>
-          <p>© 2026 Fab4Kids Studio. All rights reserved.</p>
+          <h3>Fab4Kids</h3>
+          <p>Quality educational equipment and materials for children under 10.</p>
+          <p>© 2026 Fab4Kids. All rights reserved.</p>
         </div>
 
         <div className="footer-section">
           <h4>Quick Links</h4>
-          <Link to="/about" className="footer-link">Our Approach</Link>
-          <Link to="/products" className="footer-link">Catalogue</Link>
+          <Link to="/about" className="footer-link">About Us</Link>
+          <Link to="/products" className="footer-link">Products</Link>
           <Link to="/contact" className="footer-link">Contact</Link>
         </div>
 
@@ -25,10 +25,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h4>Studio Desk</h4>
-          <p>support@fab4kids.co.uk</p>
-          <p>0800 123 4567</p>
-          <p>24 Via dei Bambini, London, UK</p>
+          <h4>Contact Us</h4>
+          <p>📧 hello@fab4kids.co.uk</p>
+          <p>📞 0800 123 4567</p>
+          <p>🏢 123 Learning Lane, London, UK</p>
         </div>
       </div>
     </footer>

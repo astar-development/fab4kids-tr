@@ -4,7 +4,6 @@ import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
-  const isDigital = product.category === 'Worksheet Packs' || product.name.includes('(Digital)');
 
   const handleAddToCart = (e) => {
     e.preventDefault();
@@ -22,7 +21,6 @@ const ProductCard = ({ product }) => {
       <div className="product-info">
         <h3 className="product-name">{product.name}</h3>
         <p className="product-category">{product.category}</p>
-        <p className="product-format">{isDigital ? 'Digital Download' : 'Physical Material'}</p>
         <p className="product-age">{product.ageGroup}</p>
         <p className="product-price">£{product.price.toFixed(2)}</p>
         
@@ -31,7 +29,7 @@ const ProductCard = ({ product }) => {
           disabled={!product.inStock}
           className="add-to-cart-btn"
         >
-          {product.inStock ? (isDigital ? 'Add Download Pack' : 'Add to Basket') : 'Out of Stock'}
+          {product.inStock ? 'Add to Basket' : 'Out of Stock'}
         </button>
       </div>
     </Link>
